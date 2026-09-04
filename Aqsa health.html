@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqsa Health — World-Class Treatment in India, Planned From the Gulf</title>
+<meta name="description" content="Aqsa Health connects patients across the UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain with JCI &amp; NABH-accredited Indian hospitals — fixed-price quotes, Arabic-speaking coordinators, and full visa and travel support.">
+<meta property="og:title" content="Aqsa Health — World-Class Treatment in India, Planned From the Gulf">
+<meta property="og:description" content="Fixed-price treatment quotes, Arabic-speaking coordinators, and end-to-end visa &amp; travel support for patients from the Gulf.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A2B27'/%3E%3Ctext x='16' y='21' font-family='monospace' font-weight='700' font-size='13' fill='%23E2932E' text-anchor='middle'%3EAH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E3B36;
+  --ink-deep:#0A2B27;
+  --sand:#EFE6D8;
+  --paper:#FBF8F2;
+  --saffron:#E2932E;
+  --saffron-deep:#C97A1E;
+  --teal-bright:#1F9E93;
+  --charcoal:#1B1B18;
+  --muted:#6B6459;
+  --line: rgba(14,59,54,0.14);
+  --radius: 14px;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Inter', sans-serif;
+  color:var(--charcoal);
+  background:var(--paper);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%; display:block;}
+a{color:inherit;}
+.wrap{max-width:1180px; margin:0 auto; padding:0 28px;}
+h1,h2,h3,h4{font-family:'Newsreader', serif; font-weight:500; letter-spacing:-0.01em; color:var(--ink-deep);}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--saffron-deep);
+  font-weight:600;
+  display:flex; align-items:center; gap:10px;
+}
+.eyebrow::before{content:''; width:22px; height:1px; background:var(--saffron-deep); display:inline-block;}
+.mono{font-family:'IBM Plex Mono', monospace;}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:14px 26px; border-radius:999px; font-weight:600; font-size:15px;
+  text-decoration:none; cursor:pointer; border:1px solid transparent;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--saffron); color:var(--ink-deep); box-shadow:0 6px 18px rgba(226,147,46,0.35);}
+.btn-primary:hover{background:var(--saffron-deep); box-shadow:0 8px 22px rgba(226,147,46,0.45);}
+.btn-ghost{background:transparent; color:var(--paper); border-color:rgba(251,248,242,0.4);}
+.btn-ghost:hover{background:rgba(251,248,242,0.1); border-color:rgba(251,248,242,0.7);}
+.btn-dark{background:var(--ink-deep); color:var(--paper);}
+.btn-dark:hover{background:var(--ink);}
+
+/* ===== NAV ===== */
+header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(10,43,39,0.92); backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(251,248,242,0.08);
+}
+nav{display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
+.logo{display:flex; align-items:center; gap:10px; color:var(--paper); text-decoration:none; font-family:'Newsreader', serif; font-size:21px; font-weight:600;}
+.logo-mark{width:30px; height:30px; border-radius:8px; background:linear-gradient(135deg, var(--saffron), var(--teal-bright)); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono'; font-weight:700; color:var(--ink-deep); font-size:13px;}
+.nav-links{display:flex; align-items:center; gap:30px; list-style:none;}
+.nav-links a{color:rgba(251,248,242,0.82); text-decoration:none; font-size:14.5px; font-weight:500;}
+.nav-links a:hover{color:var(--paper);}
+.nav-cta{display:flex; gap:12px; align-items:center;}
+.nav-toggle{display:none;}
+@media (max-width:880px){
+  .nav-links{display:none;}
+  .nav-toggle{
+    display:flex; align-items:center; justify-content:center;
+    width:38px; height:38px; background:none; border:none; color:var(--paper);
+    cursor:pointer; border-radius:8px;
+  }
+  .nav-toggle:hover{background:rgba(251,248,242,0.08);}
+}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu{
+  display:none; position:fixed; top:64px; left:0; right:0; z-index:49;
+  background:var(--ink-deep); border-bottom:1px solid rgba(251,248,242,0.14);
+  padding:22px 28px 28px; box-shadow:0 20px 40px rgba(0,0,0,0.3);
+}
+.mobile-menu.open{display:block;}
+.mobile-menu ul{list-style:none; display:flex; flex-direction:column; gap:18px; margin-bottom:22px;}
+.mobile-menu a{color:rgba(251,248,242,0.85); text-decoration:none; font-size:15.5px; font-weight:500;}
+.mobile-menu a:hover{color:var(--paper);}
+@media (min-width:881px){.mobile-menu{display:none !important;}}
+
+/* ===== HERO ===== */
+.hero{
+  background: radial-gradient(circle at 85% 0%, #144843 0%, var(--ink-deep) 55%);
+  color:var(--paper);
+  padding:76px 0 60px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:'';
+  position:absolute; inset:0;
+  background-image: repeating-linear-gradient(135deg, rgba(251,248,242,0.035) 0 2px, transparent 2px 34px);
+  pointer-events:none;
+}
+.hero-grid{display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center; position:relative;}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;}}
+.hero h1{font-size:clamp(34px,4.4vw,54px); line-height:1.08; color:var(--paper); margin:18px 0 20px;}
+.hero h1 em{color:var(--saffron); font-style:italic;}
+.hero p.lead{font-size:17.5px; color:rgba(251,248,242,0.78); max-width:520px; margin-bottom:30px;}
+.hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:38px;}
+.trust-strip{display:flex; gap:26px; flex-wrap:wrap; align-items:center; padding-top:24px; border-top:1px solid rgba(251,248,242,0.14);}
+.trust-item{display:flex; align-items:center; gap:8px; font-size:12.5px; color:rgba(251,248,242,0.65); font-family:'IBM Plex Mono';}
+.trust-item .dot{width:6px; height:6px; border-radius:50%; background:var(--teal-bright);}
+
+/* ===== DEPARTURE BOARD (signature element) ===== */
+.board{
+  background:var(--ink-deep);
+  border:1px solid rgba(251,248,242,0.14);
+  border-radius:16px;
+  padding:4px;
+  box-shadow:0 30px 70px rgba(0,0,0,0.4);
+}
+.board-head{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:16px 18px 12px;
+  font-family:'IBM Plex Mono'; font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+  color:rgba(251,248,242,0.5);
+}
+.board-head span.live{color:var(--teal-bright); display:flex; align-items:center; gap:6px;}
+.board-head span.live::before{content:''; width:6px; height:6px; border-radius:50%; background:var(--teal-bright); box-shadow:0 0 0 0 rgba(31,158,147,0.6); animation:pulse 1.8s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,158,147,0.55);}70%{box-shadow:0 0 0 8px rgba(31,158,147,0);}100%{box-shadow:0 0 0 0 rgba(31,158,147,0);}}
+.board-row{
+  display:grid; grid-template-columns:1fr 1fr 1.4fr 0.8fr 0.9fr;
+  gap:6px;
+  padding:13px 18px;
+  border-top:1px solid rgba(251,248,242,0.08);
+  font-family:'IBM Plex Mono';
+  font-size:12.5px;
+  color:var(--paper);
+  align-items:center;
+}
+.board-row.header-row{color:rgba(251,248,242,0.45); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; border-top:none;}
+.board-row .route{font-weight:600; color:var(--paper);}
+.board-row .save{color:var(--saffron); font-weight:600;}
+.board-row .status{color:var(--teal-bright); font-size:11px;}
+.board-foot{padding:14px 18px 18px;}
+.board-foot a{font-size:13px; color:var(--saffron); text-decoration:none; font-weight:600;}
+
+/* ===== SECTION SHELL ===== */
+section{padding:84px 0;}
+.section-head{max-width:640px; margin-bottom:48px;}
+.section-head h2{font-size:clamp(26px,3vw,38px); margin-top:14px;}
+.section-head p{color:var(--muted); font-size:16px; margin-top:12px;}
+.alt-bg{background:var(--sand);}
+
+/* ===== JOURNEY / BOARDING PASS STEPS ===== */
+.journey{display:grid; grid-template-columns:repeat(6,1fr); gap:14px;}
+@media (max-width:980px){.journey{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:600px){.journey{grid-template-columns:1fr;}}
+.pass{
+  background:var(--paper); border:1px solid var(--line); border-radius:12px;
+  padding:20px 16px 18px; position:relative;
+}
+.pass::before{
+  content:''; position:absolute; top:50%; left:-7px; width:14px; height:14px; border-radius:50%;
+  background:var(--sand); border:1px solid var(--line); transform:translateY(-50%);
+}
+.journey .pass:first-child::before{display:none;}
+.pass .step-num{font-family:'IBM Plex Mono'; font-size:11px; color:var(--saffron-deep); font-weight:600;}
+.pass h4{font-size:16px; margin:10px 0 6px;}
+.pass p{font-size:13.5px; color:var(--muted);}
+
+/* ===== TREATMENTS ===== */
+.treat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media (max-width:900px){.treat-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:600px){.treat-grid{grid-template-columns:1fr;}}
+.treat-card{
+  background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+  padding:26px; transition:box-shadow .2s ease, transform .2s ease;
+}
+.treat-card:hover{box-shadow:0 16px 40px rgba(14,59,54,0.1); transform:translateY(-3px);}
+.treat-icon{width:42px; height:42px; border-radius:10px; background:var(--ink); color:var(--paper); display:flex; align-items:center; justify-content:center; font-size:19px; margin-bottom:16px;}
+.treat-card h4{font-size:18px; margin-bottom:6px;}
+.treat-card p{font-size:14px; color:var(--muted); margin-bottom:16px;}
+.treat-meta{display:flex; justify-content:space-between; align-items:baseline; padding-top:14px; border-top:1px dashed var(--line);}
+.treat-meta .label{font-size:11px; color:var(--muted); font-family:'IBM Plex Mono'; text-transform:uppercase; letter-spacing:0.06em;}
+.treat-meta .value{font-family:'IBM Plex Mono'; font-weight:600; color:var(--ink-deep); font-size:14px;}
+
+/* ===== ESTIMATOR ===== */
+.estimator{
+  background:var(--ink-deep); border-radius:20px; padding:48px; color:var(--paper);
+  display:grid; grid-template-columns:0.9fr 1.1fr; gap:44px; align-items:center;
+}
+@media (max-width:900px){.estimator{grid-template-columns:1fr; padding:32px 24px;}}
+.estimator h3{color:var(--paper); font-size:28px; margin:14px 0 12px;}
+.estimator p{color:rgba(251,248,242,0.72); font-size:15px;}
+.calc-card{background:var(--paper); border-radius:14px; padding:26px; color:var(--charcoal);}
+.field{margin-bottom:16px;}
+.field label{display:block; font-size:12px; font-family:'IBM Plex Mono'; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); margin-bottom:7px;}
+.field select{
+  width:100%; padding:12px 14px; border-radius:9px; border:1px solid var(--line);
+  font-family:'Inter'; font-size:14.5px; background:var(--paper); color:var(--charcoal);
+}
+.calc-result{
+  margin-top:18px; padding:16px; background:var(--sand); border-radius:10px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.calc-result .num{font-family:'IBM Plex Mono'; font-size:22px; font-weight:600; color:var(--ink-deep);}
+.calc-result .num-label{font-size:11px; color:var(--muted); font-family:'IBM Plex Mono'; text-transform:uppercase;}
+
+/* ===== HOSPITALS ===== */
+.hosp-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+@media (max-width:900px){.hosp-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.hosp-grid{grid-template-columns:1fr;}}
+.hosp-card{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:20px; text-align:center;}
+.hosp-card .badge{width:52px; height:52px; margin:0 auto 12px; border-radius:50%; background:var(--sand); display:flex; align-items:center; justify-content:center; font-family:'Newsreader'; font-weight:600; color:var(--ink-deep); font-size:17px;}
+.hosp-card h5{font-size:14.5px; margin-bottom:4px;}
+.hosp-card span{font-size:12px; color:var(--muted); font-family:'IBM Plex Mono';}
+.placeholder-note{margin-top:20px; font-size:12.5px; color:var(--muted); font-style:italic;}
+
+/* ===== TESTIMONIALS ===== */
+.testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+@media (max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+.testi-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:26px;}
+.testi-card p.quote{font-family:'Newsreader'; font-style:italic; font-size:16.5px; color:var(--ink-deep); margin-bottom:16px;}
+.testi-who{display:flex; align-items:center; gap:10px;}
+.testi-avatar{width:38px; height:38px; border-radius:50%; background:var(--ink); color:var(--paper); display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono'; font-size:13px; font-weight:600;}
+.testi-who .name{font-size:14px; font-weight:600;}
+.testi-who .loc{font-size:12px; color:var(--muted); font-family:'IBM Plex Mono';}
+
+/* ===== LEAD FORM ===== */
+.lead-section{background:var(--ink-deep); color:var(--paper);}
+.lead-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:52px;}
+@media (max-width:900px){.lead-grid{grid-template-columns:1fr;}}
+.lead-grid h2{color:var(--paper);}
+.lead-grid .section-head p{color:rgba(251,248,242,0.7);}
+.lead-perks{list-style:none; margin-top:26px; display:flex; flex-direction:column; gap:14px;}
+.lead-perks li{display:flex; gap:12px; font-size:14.5px; color:rgba(251,248,242,0.85);}
+.lead-perks li::before{content:'✓'; color:var(--teal-bright); font-weight:600;}
+.form-card{background:var(--paper); border-radius:16px; padding:32px; color:var(--charcoal);}
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+@media (max-width:520px){.form-row{grid-template-columns:1fr;}}
+.form-card .field input, .form-card .field select, .form-card .field textarea{
+  width:100%; padding:12px 14px; border-radius:9px; border:1px solid var(--line);
+  font-family:'Inter'; font-size:14.5px; background:var(--sand); color:var(--charcoal);
+}
+.form-card .field textarea{resize:vertical; min-height:80px;}
+.form-card .btn{width:100%; margin-top:6px;}
+.form-note{font-size:12px; color:var(--muted); margin-top:12px; text-align:center;}
+#form-success{display:none; text-align:center; padding:20px 0;}
+#form-success h4{margin-bottom:8px;}
+#form-success p{color:var(--muted); font-size:14px;}
+
+/* ===== FOOTER ===== */
+footer{background:var(--ink-deep); color:rgba(251,248,242,0.7); padding:52px 0 28px; border-top:1px solid rgba(251,248,242,0.1);}
+.foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px; margin-bottom:40px;}
+@media (max-width:800px){.foot-grid{grid-template-columns:1fr 1fr;}}
+.foot-grid h5{color:var(--paper); font-family:'IBM Plex Mono'; font-size:12px; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:14px;}
+.foot-grid ul{list-style:none; display:flex; flex-direction:column; gap:9px;}
+.foot-grid a{color:rgba(251,248,242,0.68); text-decoration:none; font-size:14px;}
+.foot-grid a:hover{color:var(--paper);}
+.foot-bottom{display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(251,248,242,0.1); padding-top:22px; font-size:12.5px; flex-wrap:wrap; gap:10px;}
+
+/* ===== WHATSAPP FAB ===== */
+.wa-fab{
+  position:fixed; bottom:24px; right:24px; z-index:60;
+  width:58px; height:58px; border-radius:50%; background:#25D366;
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 26px rgba(37,211,102,0.45);
+  text-decoration:none; color:white;
+  animation:float 3s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+@media (prefers-reduced-motion:reduce){
+  .wa-fab{animation:none;} .board-head span.live::before{animation:none;}
+}
+
+/* focus visibility */
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--teal-bright); outline-offset:2px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo"><span class="logo-mark">AH</span>Aqsa Health</a>
+      <ul class="nav-links">
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#estimator">Cost Estimate</a></li>
+        <li><a href="#hospitals">Hospitals</a></li>
+        <li><a href="#journey">How It Works</a></li>
+        <li><a href="#testimonials">Patient Stories</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#lead" class="btn btn-primary" style="padding:10px 20px; font-size:14px;">Get Free Quote</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#estimator">Cost Estimate</a></li>
+      <li><a href="#hospitals">Hospitals</a></li>
+      <li><a href="#journey">How It Works</a></li>
+      <li><a href="#testimonials">Patient Stories</a></li>
+    </ul>
+    <a href="#lead" class="btn btn-primary" style="width:100%;">Get Free Quote</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Medical Travel Desk · Gulf to India</p>
+      <h1>World-class treatment in India, <em>planned entirely from home</em>.</h1>
+      <p class="lead">We connect patients across the UAE, Saudi Arabia, Qatar, Kuwait, Oman and Bahrain with JCI &amp; NABH-accredited Indian hospitals — at a fraction of Gulf private-care cost, with an Arabic-speaking coordinator from your first message to your flight home.</p>
+      <div class="hero-ctas">
+        <a href="#lead" class="btn btn-primary">Get a Free Quote</a>
+        <a href="https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20treatment%20in%20India" class="btn btn-ghost" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="trust-strip">
+        <div class="trust-item"><span class="dot"></span>JCI-accredited partner hospitals</div>
+        <div class="trust-item"><span class="dot"></span>Arabic &amp; English coordinators</div>
+        <div class="trust-item"><span class="dot"></span>Visa &amp; airport pickup support</div>
+      </div>
+    </div>
+
+    <div class="board" aria-label="Sample treatment routes and savings">
+      <div class="board-head">
+        <span>Live Route Board</span>
+        <span class="live">Updated today</span>
+      </div>
+      <div class="board-row header-row">
+        <div>From</div><div>To</div><div>Treatment</div><div>Save</div><div>Wait</div>
+      </div>
+      <div class="board-row"><div class="route">DXB</div><div class="route">DEL</div><div>Cardiac Bypass</div><div class="save">~72%</div><div class="status">3–5 days</div></div>
+      <div class="board-row"><div class="route">RUH</div><div class="route">BLR</div><div>Knee Replacement</div><div class="save">~68%</div><div class="status">2–3 days</div></div>
+      <div class="board-row"><div class="route">DOH</div><div class="route">MAA</div><div>IVF Cycle</div><div class="save">~65%</div><div class="status">1 week</div></div>
+      <div class="board-row"><div class="route">KWI</div><div class="route">BOM</div><div>Oncology</div><div class="save">~70%</div><div class="status">On request</div></div>
+      <div class="board-row"><div class="route">MCT</div><div class="route">DEL</div><div>Cosmetic Surgery</div><div class="save">~60%</div><div class="status">2–4 days</div></div>
+      <div class="board-foot"><a href="#estimator">See your own estimate →</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Your Itinerary</p>
+      <h2>Six steps, one coordinator, start to finish.</h2>
+      <p>Every patient is assigned a single point of contact who stays with you from the first enquiry to the follow-up call after you're home.</p>
+    </div>
+    <div class="journey">
+      <div class="pass"><div class="step-num">01 · ENQUIRY</div><h4>Share your case</h4><p>Send reports via WhatsApp or the form below — no clinic visit needed yet.</p></div>
+      <div class="pass"><div class="step-num">02 · REVIEW</div><h4>Doctor opinion</h4><p>A specialist reviews your file and returns a treatment plan within 48 hours.</p></div>
+      <div class="pass"><div class="step-num">03 · QUOTE</div><h4>Fixed cost estimate</h4><p>A transparent package price — treatment, stay, and coordination fees.</p></div>
+      <div class="pass"><div class="step-num">04 · TRAVEL</div><h4>Visa &amp; flights</h4><p>Medical visa invitation letter, flight guidance, and airport pickup arranged.</p></div>
+      <div class="pass"><div class="step-num">05 · TREATMENT</div><h4>Care &amp; recovery</h4><p>Hospital stay with an interpreter and daily updates sent to your family.</p></div>
+      <div class="pass"><div class="step-num">06 · RETURN</div><h4>Fly home well</h4><p>Discharge summary, medication plan, and tele-follow-ups after you land.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="treatments">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Specialties</p>
+      <h2>Treated most often for patients from the Gulf.</h2>
+      <p>Indicative starting prices — your fixed quote depends on diagnosis, hospital, and room category.</p>
+    </div>
+    <div class="treat-grid">
+      <div class="treat-card"><div class="treat-icon">♡</div><h4>Cardiac Care</h4><p>Bypass, valve replacement, angioplasty at India's top cardiac centres.</p><div class="treat-meta"><span class="label">From</span><span class="value">$6,500</span></div></div>
+      <div class="treat-card"><div class="treat-icon">◑</div><h4>Orthopedics</h4><p>Knee &amp; hip replacement, spine surgery, sports injury repair.</p><div class="treat-meta"><span class="label">From</span><span class="value">$4,200</span></div></div>
+      <div class="treat-card"><div class="treat-icon">✧</div><h4>Oncology</h4><p>Surgical, chemo and radiation care with tumour board reviews.</p><div class="treat-meta"><span class="label">From</span><span class="value">$3,800</span></div></div>
+      <div class="treat-card"><div class="treat-icon">✦</div><h4>Fertility (IVF)</h4><p>IVF, ICSI and fertility preservation with high success-rate clinics.</p><div class="treat-meta"><span class="label">From</span><span class="value">$2,400</span></div></div>
+      <div class="treat-card"><div class="treat-icon">◎</div><h4>Cosmetic &amp; Bariatric</h4><p>Weight-loss surgery, rhinoplasty and reconstructive procedures.</p><div class="treat-meta"><span class="label">From</span><span class="value">$2,900</span></div></div>
+      <div class="treat-card"><div class="treat-icon">◇</div><h4>Dental &amp; Cosmetic</h4><p>Implants, full-mouth rehabilitation and smile design.</p><div class="treat-meta"><span class="label">From</span><span class="value">$450</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="estimator">
+  <div class="wrap">
+    <div class="estimator">
+      <div>
+        <p class="eyebrow" style="color:var(--saffron);">Cost Estimator</p>
+        <h3>See what you could save before you speak to anyone.</h3>
+        <p>This is a ballpark based on typical package prices. Your fixed quote follows a doctor's review of your reports.</p>
+      </div>
+      <div class="calc-card">
+        <div class="field">
+          <label for="treatment">Treatment</label>
+          <select id="treatment">
+            <option value="6500|18000">Cardiac Bypass Surgery</option>
+            <option value="4200|13000">Knee Replacement (single)</option>
+            <option value="2400|9000">IVF Cycle</option>
+            <option value="3800|15000">Oncology (surgery + chemo, indicative)</option>
+            <option value="2900|10000">Bariatric Surgery</option>
+            <option value="450|1800">Dental Implant (per tooth)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="country">Traveling from</label>
+          <select id="country">
+            <option>United Arab Emirates</option>
+            <option>Saudi Arabia</option>
+            <option>Qatar</option>
+            <option>Kuwait</option>
+            <option>Oman</option>
+            <option>Bahrain</option>
+          </select>
+        </div>
+        <div class="calc-result">
+          <div>
+            <div class="num-label">Estimated India Cost</div>
+            <div class="num" id="india-cost">$6,500</div>
+          </div>
+          <div>
+            <div class="num-label">Typical Savings</div>
+            <div class="num" id="savings">64%</div>
+          </div>
+        </div>
+        <a href="#lead" class="btn btn-primary" style="width:100%; margin-top:16px;">Get My Exact Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt-bg" id="hospitals">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Network</p>
+      <h2>Partner hospitals &amp; doctors.</h2>
+      <p>Accredited centres across Delhi NCR, Mumbai, Bangalore and Chennai. Add your real partner names, specialties and accreditation logos here.</p>
+    </div>
+    <div class="hosp-grid">
+      <div class="hosp-card"><div class="badge">A</div><h5>Partner Hospital A</h5><span>Delhi NCR · Cardiac</span></div>
+      <div class="hosp-card"><div class="badge">B</div><h5>Partner Hospital B</h5><span>Mumbai · Oncology</span></div>
+      <div class="hosp-card"><div class="badge">C</div><h5>Partner Hospital C</h5><span>Bangalore · Orthopedics</span></div>
+      <div class="hosp-card"><div class="badge">D</div><h5>Partner Hospital D</h5><span>Chennai · Fertility</span></div>
+    </div>
+    <p class="placeholder-note">Placeholder network shown above — send me your actual hospital/doctor list and I'll swap these in with logos, accreditation badges and doctor profiles.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Patient Stories</p>
+      <h2>Families who made the trip.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card"><p class="quote">"Our coordinator handled the visa letter, hospital admission and even hotel for my wife — we only had to show up."</p><div class="testi-who"><div class="testi-avatar">KA</div><div><div class="name">K. Al-Farsi</div><div class="loc">Muscat, Oman</div></div></div></div>
+      <div class="testi-card"><p class="quote">"The quote we got before flying was the exact bill at discharge. No surprises, which is rare for surgery abroad."</p><div class="testi-who"><div class="testi-avatar">MS</div><div><div class="name">M. Al-Sabah</div><div class="loc">Kuwait City, Kuwait</div></div></div></div>
+      <div class="testi-card"><p class="quote">"They found us an Arabic-speaking nurse for the whole stay. My father was never once confused about his care plan."</p><div class="testi-who"><div class="testi-avatar">RH</div><div><div class="name">R. Haddad</div><div class="loc">Doha, Qatar</div></div></div></div>
+    </div>
+    <p class="placeholder-note">Sample quotes shown above — replace with real, consented patient testimonials once you have them.</p>
+  </div>
+</section>
+
+<section class="lead-section" id="lead">
+  <div class="wrap">
+    <div class="lead-grid">
+      <div>
+        <div class="section-head">
+          <p class="eyebrow" style="color:var(--saffron);">Talk To A Coordinator</p>
+          <h2>Get your free treatment quote within 48 hours.</h2>
+          <p>Share a few details and your reports if you have them — no obligation, no fees to get a quote.</p>
+        </div>
+        <ul class="lead-perks">
+          <li>Response from a real coordinator, not a bot</li>
+          <li>Second opinion from an Indian specialist</li>
+          <li>Fixed-price package before you travel</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <form id="lead-form">
+          <div class="form-row">
+            <div class="field"><label for="name">Full name</label><input type="text" id="name" required></div>
+            <div class="field"><label for="phone">WhatsApp / Phone</label><input type="tel" id="phone" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="lead-country">Country</label>
+              <select id="lead-country">
+                <option>United Arab Emirates</option>
+                <option>Saudi Arabia</option>
+                <option>Qatar</option>
+                <option>Kuwait</option>
+                <option>Oman</option>
+                <option>Bahrain</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="lead-treatment">Treatment interested in</label>
+              <select id="lead-treatment">
+                <option>Cardiac Care</option>
+                <option>Orthopedics</option>
+                <option>Oncology</option>
+                <option>Fertility (IVF)</option>
+                <option>Cosmetic / Bariatric</option>
+                <option>Dental</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label for="message">Anything we should know?</label><textarea id="message" placeholder="Diagnosis, reports you have, preferred travel dates..."></textarea></div>
+          <button type="submit" class="btn btn-primary">Request Free Quote</button>
+          <p class="form-note">By submitting, you agree to be contacted via WhatsApp, phone or email.</p>
+        </form>
+        <div id="form-success">
+          <h4>Request received ✓</h4>
+          <p>A coordinator will reach out on WhatsApp within 48 hours. You can also message us now for a faster reply.</p>
+          <a href="https://wa.me/919999999999" class="btn btn-dark" style="margin-top:14px; width:100%;" target="_blank" rel="noopener">Message us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo" style="margin-bottom:14px; display:inline-flex;"><span class="logo-mark">AH</span>Aqsa Health</a>
+        <p style="font-size:13.5px; color:rgba(251,248,242,0.6); max-width:260px; margin-top:10px;">Medical travel coordination between the Gulf and India. Not a hospital — an independent patient advisory service.</p>
+      </div>
+      <div>
+        <h5>Treatments</h5>
+        <ul><li><a href="#treatments">Cardiac Care</a></li><li><a href="#treatments">Orthopedics</a></li><li><a href="#treatments">Oncology</a></li><li><a href="#treatments">Fertility</a></li></ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul><li><a href="#journey">How it works</a></li><li><a href="#hospitals">Hospital network</a></li><li><a href="#testimonials">Patient stories</a></li><li><a href="#lead">Get a quote</a></li></ul>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <ul><li><a href="https://wa.me/919999999999">WhatsApp: +91 99999 99999</a></li><li><a href="mailto:care@sanaahealth.example">care@sanaahealth.example</a></li><li><a href="#top">Delhi NCR, India</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Aqsa Health Medical Travel. All prices indicative.</span>
+      <span>Serving UAE · Saudi Arabia · Qatar · Kuwait · Oman · Bahrain</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20for%20treatment%20in%20India" class="wa-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.44 1.32 4.94L2.05 22l5.28-1.38a9.9 9.9 0 0 0 4.71 1.2h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.13-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm5.78 14.13c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.24-.26.53-.32.71-.32.18 0 .35 0 .5.01.16.01.38-.06.59.45.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.3-.29.46-.15.17-.31.37-.44.5-.15.15-.3.31-.13.6.17.29.75 1.24 1.61 2.01 1.11.99 2.05 1.29 2.34 1.44.29.14.46.12.63-.07.17-.19.72-.85.92-1.14.19-.29.39-.24.65-.14.26.1 1.66.79 1.95.93.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+
+<script>
+const treatmentSelect = document.getElementById('treatment');
+const countrySelect = document.getElementById('country');
+const indiaCostEl = document.getElementById('india-cost');
+const savingsEl = document.getElementById('savings');
+
+// Illustrative multipliers on typical home-country private-care cost.
+// Replace with real market data per country.
+const countryFactor = {
+  'United Arab Emirates': 1.00,
+  'Saudi Arabia': 0.95,
+  'Qatar': 1.05,
+  'Kuwait': 0.98,
+  'Oman': 0.90,
+  'Bahrain': 0.92
+};
+
+function updateEstimate(){
+  const [indiaCost, homeCostBase] = treatmentSelect.value.split('|').map(Number);
+  const factor = countryFactor[countrySelect.value] ?? 1;
+  const homeCost = homeCostBase * factor;
+  const savingsPct = Math.round(((homeCost - indiaCost) / homeCost) * 100);
+  indiaCostEl.textContent = '$' + indiaCost.toLocaleString();
+  savingsEl.textContent = savingsPct + '%';
+}
+treatmentSelect.addEventListener('change', updateEstimate);
+countrySelect.addEventListener('change', updateEstimate);
+updateEstimate();
+
+// Mobile nav
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+navToggle.addEventListener('click', function(){
+  const isOpen = mobileMenu.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+});
+mobileMenu.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click', function(){
+    mobileMenu.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+const leadForm = document.getElementById('lead-form');
+leadForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  // NOTE: this is a front-end demo only. Wire this up to your CRM / Google Sheet / email
+  // backend (e.g. via a form endpoint like Formspree, or a small serverless function)
+  // to actually receive leads.
+  leadForm.style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+});
+</script>
+
+</body>
+</html>
